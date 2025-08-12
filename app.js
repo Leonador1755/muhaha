@@ -410,16 +410,16 @@ function loadStudents() {
             studentElement.innerHTML = `
                 <span>${index + 1}. [${student.id}] ${student.name}</span>
                 <div class="status-options">
-                    <input type="radio" id="status-${student.id}-present" name="status-${student.id}" value="มา" style="margin: 0px 0px 0px 0px;" checked>
+                    <input type="radio" id="status-${student.id}-present" name="status-${student.id}" value="มา" checked>
                     <label for="status-${student.id}-present" style="margin: 0px 0px 0px 0px;">มา</label>
                     
-                    <input type="radio" id="status-${student.id}-leave" name="status-${student.id}" value="ลา" style="margin: 0px 0px 0px 0px;">
+                    <input type="radio" id="status-${student.id}-leave" name="status-${student.id}" value="ลา">
                     <label for="status-${student.id}-leave" style="margin: 0px 0px 0px 0px;">ลา</label>
                     
-                    <input type="radio" id="status-${student.id}-absent" name="status-${student.id}" value="ขาด" style="margin: 0px 0px 0px 0px;">
+                    <input type="radio" id="status-${student.id}-absent" name="status-${student.id}" value="ขาด">
                     <label for="status-${student.id}-absent" style="margin: 0px 0px 0px 0px;">ขาด</label>
                     
-                    <input type="radio" id="status-${student.id}-skip" name="status-${student.id}" value="โดด" style="margin: 0px 0px 0px 0px;">
+                    <input type="radio" id="status-${student.id}-skip" name="status-${student.id}" value="โดด">
                     <label for="status-${student.id}-skip" style="margin: 0px 0px 0px 0px;">โดด</label>
                 </div>
             `;
