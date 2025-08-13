@@ -27,16 +27,6 @@
             max-width: 800px;
         }
 
-        /* --- ส่วนหัว (ใหม่) --- */
-        .header {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center; /* จัดให้ h1 อยู่กลาง */
-            margin-bottom: 20px;
-            min-height: 50px; /* กำหนดความสูงขั้นต่ำ */
-        }
-
         h1 {
             color: #1c1e21;
             text-align: center;
@@ -45,26 +35,21 @@
 
         /* --- สไตล์สำหรับปุ่มรายงาน (ย้ายไปมุมขวา) --- */
         .report-btn-link {
-            position: absolute; /* ทำให้ลอยเทียบกับ .header */
-            right: 0; /* ชิดขวา */
-            top: 50%;
-            transform: translateY(-50%); /* จัดกึ่งกลางแนวตั้ง */
-            padding: 10px 20px;
+            display: inline-block;
+            padding: 10px 18px;
+            margin-bottom: 25px;
             background-color: #f8f9fa;
-            color: #6f42c1; /* สีม่วง */
+            color: #6f42c1; /* เปลี่ยนเป็นสีม่วง */
             border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
-            transition: all 0.2s ease-in-out;
-            white-space: nowrap;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .report-btn-link:hover {
             background-color: #e9ecef;
             color: #5a349b; /* สีม่วงเข้มขึ้น */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* เอา transform ออก ปุ่มจะไม่ขยับ */
         }
 
         hr {
@@ -175,10 +160,8 @@
 <body>
 
     <div class="container">
-        <div class="header">
-            <h1>ระบบเช็คชื่อนักเรียน</h1>
-            <a href="report.html" class="report-btn-link">ดูรายงาน &rarr;</a>
-        </div>
+        <a href="report.html" class="report-btn-link">ดูรายงาน &rarr;</a>
+        <h1>ระบบเช็คชื่อนักเรียน</h1>
         <hr>
 
         <div class="controls-grid">
